@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { ThemeProvider } from '@src/components/ThemeProvider/ThemeProvider'
 import { Main } from '@src/Main'
+import '@src/intl/i18next'
 
 const App: FC = () => {
   return (

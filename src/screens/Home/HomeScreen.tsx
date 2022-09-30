@@ -1,15 +1,13 @@
 import React, { FC } from 'react'
-import { Button, View } from 'react-native'
-import { useTheme } from '@src/components/ThemeProvider/ThemeProvider'
+import { View } from 'react-native'
 import { Text } from '@src/styles/Text/Text.styled'
+import { useTranslation } from 'react-i18next'
 
 export const HomeScreen: FC = () => {
-  const { changeTheme } = useTheme()
+  const { t } = useTranslation()
   return (
     <View>
-      <Text>Test</Text>
-      <Button title={'Light Theme'} onPress={() => changeTheme('light')} />
-      <Button title={'Dark Theme'} onPress={() => changeTheme('dark')} />
+      <Text>{t('Test')}</Text>
     </View>
   )
 }
