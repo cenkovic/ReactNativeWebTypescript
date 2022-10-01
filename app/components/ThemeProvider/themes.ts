@@ -1,5 +1,5 @@
 import { DefaultTheme } from 'styled-components/native'
-import { ThemeName } from '@src/styled'
+import { ThemeName } from '@app/styled'
 
 export const light: DefaultTheme = {
   name: 'light',

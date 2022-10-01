@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
-import { HomeScreen } from '@src/screens/Home/HomeScreen'
+import { HomeScreen } from '@app/screens/Home/HomeScreen'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { useTheme } from '@src/components/ThemeProvider/ThemeProvider'
-import HomeIcon from '@src/assets/icons/HomeIcon'
-import SettingsIcon from '@src/assets/icons/SettingsIcon'
-import { SettingsScreen } from '@src/screens/Settings/SettingsScreen'
+import { useTheme } from '@app/components/ThemeProvider/ThemeProvider'
+import HomeIcon from '@app/assets/icons/HomeIcon'
+import SettingsIcon from '@app/assets/icons/SettingsIcon'
+import { SettingsScreen } from '@app/screens/Settings/SettingsScreen'
 import { useTranslation } from 'react-i18next'
 
 const Icons = new Map<string, FC>([

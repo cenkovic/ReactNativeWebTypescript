@@ -1,7 +1,7 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import resources from '@src/intl/resources'
-import { language } from '@src/utils/locale'
+import resources from '@app/intl/resources'
+import { language } from '@app/utils/locale'
 
 i18n.use(initReactI18next).init({
   compatibilityJSON: 'v3',

@@ -14,7 +14,7 @@
     "types": ["react-native", "jest", "styled-components-react-native"],
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["src/*/index", "src/*"]
+      "@app/*": ["app/*/index", "app/*"]
     }
   }
 }

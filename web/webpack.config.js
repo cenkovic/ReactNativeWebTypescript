@@ -52,7 +52,7 @@ module.exports = {
     ], // read files in fillowing order
     alias: Object.assign({
       'react-native$': 'react-native-web',
-      '@src': path.join(rootDir, 'src')
+      '@app': path.join(rootDir, 'app')
     })
   },
   devServer: {

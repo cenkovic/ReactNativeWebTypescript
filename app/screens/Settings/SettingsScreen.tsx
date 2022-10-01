@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { Button, View } from 'react-native'
-import { useTheme } from '@src/components/ThemeProvider/ThemeProvider'
-import { Text } from '@src/styles/Text/Text.styled'
+import { useTheme } from '@app/components/ThemeProvider/ThemeProvider'
+import { Text } from '@app/styles/Text/Text.styled'
 import { useTranslation } from 'react-i18next'
 
 export const SettingsScreen: FC = () => {

@@ -7,7 +7,7 @@ import React, {
 } from 'react'
 import themes, { light } from './themes'
 import { DefaultTheme } from 'styled-components/native'
-import { ThemeName } from '@src/styled'
+import { ThemeName } from '@app/styled'
 
 const ThemeContext = createContext<{
   theme: DefaultTheme

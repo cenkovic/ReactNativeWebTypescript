@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import styled, { ThemeProvider } from 'styled-components/native'
-import { useTheme } from '@src/components/ThemeProvider/ThemeProvider'
+import { useTheme } from '@app/components/ThemeProvider/ThemeProvider'
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native'
-import { TabNavigation } from '@src/navigation/TabNavigation'
+import { TabNavigation } from '@app/navigation/TabNavigation'
 
 export const Main: FC = () => {
   const { theme } = useTheme()
