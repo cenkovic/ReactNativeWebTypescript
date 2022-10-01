@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { HomeScreen } from '@app/screens/Home/HomeScreen'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { useTheme } from '@app/components/ThemeProvider/ThemeProvider'
+import { useTheme } from '@app/themes/ThemeProvider'
 import HomeIcon from '@app/assets/icons/HomeIcon'
 import SettingsIcon from '@app/assets/icons/SettingsIcon'
 import { SettingsScreen } from '@app/screens/Settings/SettingsScreen'

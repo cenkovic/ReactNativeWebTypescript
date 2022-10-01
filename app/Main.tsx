@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import styled, { ThemeProvider } from 'styled-components/native'
-import { useTheme } from '@app/components/ThemeProvider/ThemeProvider'
+import { useTheme } from '@app/themes/ThemeProvider'
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native'
 import { TabNavigation } from '@app/navigation/TabNavigation'
 

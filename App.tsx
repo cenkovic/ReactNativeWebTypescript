@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { ThemeProvider } from '@app/components/ThemeProvider/ThemeProvider'
+import { ThemeProvider } from '@app/themes/ThemeProvider'
 import { Main } from '@app/Main'
 import '@app/intl/i18next'
 
