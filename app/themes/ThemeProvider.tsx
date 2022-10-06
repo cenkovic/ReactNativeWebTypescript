@@ -2,12 +2,14 @@ import React, {
   createContext,
   FC,
   PropsWithChildren,
-  useContext,
-  useState
+  useCallback,
+  useContext
 } from 'react'
 import themes, { light } from './themes'
 import { DefaultTheme } from 'styled-components/native'
 import { ThemeName } from '@app/styled'
+import { useDispatch, useSelector } from 'react-redux'
+import { useAppSlice, changeTheme } from '@app/redux/slices/appSlice'
 
 const ThemeContext = createContext<{
   theme: DefaultTheme
@@ -15,7 +17,11 @@ const ThemeContext = createContext<{
 }>({ theme: light, changeTheme: () => null })
 
 export const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
-  const [theme, setTheme] = useState<ThemeName>('light')
+  const dispatch = useDispatch()
+  const { theme } = useSelector(useAppSlice)
+  const setTheme = useCallback((t: ThemeName) => {
+    dispatch(changeTheme(t))
+  }, [])
   return (
     <ThemeContext.Provider
       value={{

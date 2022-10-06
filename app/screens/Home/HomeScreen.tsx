@@ -1,13 +1,17 @@
 import React, { FC } from 'react'
-import { View } from 'react-native'
-import { Text } from '@app/styles/Text/Text.styled'
-import { useTranslation } from 'react-i18next'
+import { useGetRandomJokeQuery } from '@app/services/api/api'
+import { Container, Setup, Punchline } from './HomeScree.styled'
+import { RefreshControl } from 'react-native'
 
 export const HomeScreen: FC = () => {
-  const { t } = useTranslation()
+  const { data: joke, isFetching, refetch } = useGetRandomJokeQuery()
   return (
-    <View>
-      <Text>{t('Test')}</Text>
-    </View>
+    <Container
+      refreshControl={
+        <RefreshControl refreshing={isFetching} onRefresh={refetch} />
+      }>
+      {joke && <Setup>{joke.setup}</Setup>}
+      {joke && <Punchline>{joke.punchline}</Punchline>}
+    </Container>
   )
 }

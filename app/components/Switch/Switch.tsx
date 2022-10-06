@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Switch as RNSwitch, SwitchProps as RNSwitchProps } from 'react-native'
-import { Container, Label } from './Switch.styles'
+import { Container, Label } from './Switch.styled'
 
 export interface SwitchProps extends RNSwitchProps {
   label?: string

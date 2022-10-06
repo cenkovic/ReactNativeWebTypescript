@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { useTheme } from '@app/themes/ThemeProvider'
 import { useTranslation } from 'react-i18next'
 import { Switch } from '@app/components/Switch/Switch'
-import { Container, OptionRow } from './SettingsScreen.styles'
+import { Container, OptionRow } from './SettingsScreen.styled'
 import { LanguagePicker } from '@app/components/LanguagePicker/LanguagePicker'
 
 export const SettingsScreen: FC = () => {
